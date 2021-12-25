@@ -1,0 +1,75 @@
+html{scroll-behavior: smooth;}
+.navbar {
+  background: #000000d8; }
+  .navbar #navBar ul li .active {
+    background: #2dcde291;
+    border-radius: 3px; }
+  .navbar #navBar ul li a:hover {
+    background: #2dcde291;
+    border-radius: 3px; }
+  .navbar a {
+    text-decoration: none; }
+    .navbar a i {
+      font-weight: 700;
+      font-size: 35px;
+      color: #ffffff;
+      line-height: 55px;
+      border: 3px solid #55f5df79;
+      border-radius: 10px 4px;
+      padding: 0 10px; }
+    .navbar a i:hover {
+      border-color: #eb686880; }
+
+#home {
+  min-height: 600px;
+  background: linear-gradient(#4fe9e994, #4fe9e988), url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  #home .home-top-area {
+    margin-top: 120px; }
+
+#services {
+  background-color: #EFEFF5; }
+  #services .card {
+    box-shadow: 2px 2px 8px #f3bbbb; }
+  #services .fa {
+    font-size: 35px; }
+
+#work {
+  background-color: #F8F9FA; }
+
+#packages .card {
+  box-shadow: 3px 4px 5px #f3bbbb; }
+
+#skill {
+  background-color: #EFEFF5; }
+  #skill .fa {
+    font-size: 70px;
+    margin-top: -40px;
+    color: #fa3a7a; }
+  #skill .fa:hover {
+    color: #000000a4; }
+
+#contact .card {
+  background-color: #EFEFF5; }
+  #contact .card #send:hover {
+    background-color: #EFEFF5;
+    color: green; }
+  #contact .card #reset:hover {
+    background-color: #EFEFF5;
+    color: red; }
+
+#contact #contact-right {
+  margin-top: 120px; }
+
+#footer .top {
+  width: 50px;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  background: #ff000096;
+  padding: 5px; }
+  #footer .top abbr {
+    cursor: pointer; }

@@ -1,0 +1,352 @@
+$icon-size: 4.5rem;
+$skill-icon-size: 7rem;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.active{
+    background: #2C97A5;
+}
+// navbar-top-section
+header {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: .3rem solid rgba(252, 57, 57, 0.856);
+    nav{
+        a.logo {
+            border: .2rem solid #2D99A7;
+            padding: .2rem 1.1rem;
+            border-radius: .8rem .1rem;
+            -webkit-border-radius: .8rem .1rem;
+            -moz-border-radius: .8rem .1rem;
+            -ms-border-radius: .8rem .1rem;
+            -o-border-radius: .8rem .1rem;
+            float: left;
+            margin: 1rem 0;
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+            &:hover{
+                text-decoration: none;
+                color: #f05050;
+                border-color: #fff;
+                background: rgba(0, 0, 0, 0.514);
+            }
+        }
+        // main-nav
+        .main-nav {
+            float: right;
+            margin-top: 1.5rem;
+    
+            li {
+                display: inline-block;
+                margin-left: .5rem;
+                &:first-child {
+                    margin-left: 0
+                }
+                a{
+                    font-size: 1.7rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #fff;
+                    border-radius: .4rem;
+                    padding: 1rem 1.3rem;
+                    transition: .5s;
+                    display: inline-block;
+                }
+                &:hover a{
+                    background: #2C97A5;
+                }
+                
+            }
+            
+        }
+        // MOBILE MENU
+        .mobile-menu {
+            span {
+                color: #fff;
+                font-size: 3rem;
+                float: right;
+                margin-top: 1.5rem;
+                display: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .overlay-bg {
+                width: 0;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: rgba(0,0,0,0.9);
+                z-index: 99999;
+                overflow-x: hidden;
+                transition: .5s;
+    
+                .closeBtn {
+                    position: absolute;
+                    top: 1.8rem;
+                    right: 3.5rem;
+                    font-size: 4.2rem;
+                    color: #fff;
+                    text-decoration: none;
+                }
+    
+                .overlay-content {
+                    position: relative;
+                    top: 20%;
+                    width: 100%;
+                    text-align: center;
+                    a {
+                        width: 50%;
+                        margin: auto;
+                        color: #999;
+                        display: block;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        letter-spacing: .2rem;
+                        padding: 1rem 0;
+                        text-decoration: none;
+                        transition: .4s;
+                        -webkit-transition: .4s;
+                        -moz-transition: .4s;
+                        -ms-transition: .4s;
+                        -o-transition: .4s;
+                        border-radius: .4rem;
+                        -webkit-border-radius: .4rem;
+                        -moz-border-radius: .4rem;
+                        -ms-border-radius: .4rem;
+                        -o-border-radius: .4rem;
+                        &:hover{
+                            color: #fff;
+                            background: #fa4646bd;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}
+// Home-section
+#home{
+    min-height: 85%;
+    background: linear-gradient(#4fe9e994, #4fe9e988), url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 6.6rem;
+    .home-top-area{
+        padding: 15rem 0;
+        h1{
+            font-size: 4.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        a{
+            font-size: 1.8rem;
+        }
+    }
+}
+// About-Section
+#about{
+    padding: 12rem 0;
+    .align-self-end{
+        align-items: center;
+        h3{
+            font-size: 2.7rem;
+        }
+        p{
+            font-size: 1.9rem;
+            text-align: justify;
+        }
+    }
+}
+// Services-Section
+#services{
+    background-color: #EFEFF5;
+    h3{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3.4rem;
+    }
+    .card{
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        &:hover{
+            box-shadow: .2rem .2rem .8rem #fcb4b4;
+        }
+        .card-header{
+            .fa{
+                font-size: $icon-size
+            }
+        }
+        .card-body{
+            h4{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+}
+// packages-Section
+#packages{
+    h3{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3.4rem;
+    }
+    .card{
+        box-shadow: .3rem .4rem .5rem #f3bbbb;
+        h4{
+            font-size: 2.4rem;
+        }
+        h3{
+            font-size: 2.8rem;
+        }
+        ul{
+            li{
+                font-size: 1.6rem;
+            }
+        }
+        .card-footer{
+            button{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+// Skills-Section
+#skill{
+    background-color: #EFEFF5;
+    h3{
+        font-size: 2.5rem;
+    }
+    .card{
+        .fa{
+            font-size: $skill-icon-size;
+            margin-top: -4.5rem;
+            color: #fa3a7a;
+        }
+        &:hover .fa{
+            color: #78af44;
+        }
+        .card-body{
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+    .progress{
+        height: 2rem;
+        .progress-bar{
+            font-size: 1.6rem;
+            
+        }
+    }
+}
+// Contact
+#contact{
+    .card{
+        background-color: #EFEFF5;
+
+        #send:hover{
+            background-color: #EFEFF5;
+            color: green;
+        }
+        #reset:hover{
+            background-color: #EFEFF5;
+            color: red;
+        }
+        .card-body{
+            .form-group{
+                input{
+                    font-size: 1.7rem;
+                }
+                textarea{
+                    resize: none;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    #contact-right{
+        margin-top: 120px;
+
+        h5{
+            font-size: 2.4rem;
+        }
+        h2{
+            font-size: 3.2rem;
+        }
+    }
+}
+
+#footer{
+    .scoleBtn{
+        width: 50px;
+        color: #fff;
+        font-size: 2.5rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+        background: #ff000096;
+        padding: .5rem;
+        abbr{
+            cursor: pointer;
+        }
+    }
+    span{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+// MAX WIDTH 1024px
+@media only screen and (max-width: 1024px){
+    header{
+        nav{
+            .main-nav{
+                display: none;
+            }
+            .mobile-menu{
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// MAX WIDTH 992px
+@media only screen and (max-width: 992px){
+    
+}
+

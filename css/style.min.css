@@ -1,0 +1,356 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active {
+  background: #2C97A5;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 0.3rem solid rgba(252, 57, 57, 0.856);
+}
+
+header nav a.logo {
+  border: .2rem solid #2D99A7;
+  padding: .2rem 1.1rem;
+  border-radius: .8rem .1rem;
+  -webkit-border-radius: .8rem .1rem;
+  -moz-border-radius: .8rem .1rem;
+  -ms-border-radius: .8rem .1rem;
+  -o-border-radius: .8rem .1rem;
+  float: left;
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+header nav a.logo:hover {
+  text-decoration: none;
+  color: #f05050;
+  border-color: #fff;
+  background: rgba(0, 0, 0, 0.514);
+}
+
+header nav .main-nav {
+  float: right;
+  margin-top: 1.5rem;
+}
+
+header nav .main-nav li {
+  display: inline-block;
+  margin-left: .5rem;
+}
+
+header nav .main-nav li:first-child {
+  margin-left: 0;
+}
+
+header nav .main-nav li a {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: .4rem;
+  padding: 1rem 1.3rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+}
+
+header nav .main-nav li:hover a {
+  background: #2C97A5;
+}
+
+header nav .mobile-menu span {
+  color: #fff;
+  font-size: 3rem;
+  float: right;
+  margin-top: 1.5rem;
+  display: none;
+}
+
+header nav .mobile-menu span:hover {
+  cursor: pointer;
+}
+
+header nav .mobile-menu .overlay-bg {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+  overflow-x: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .mobile-menu .overlay-bg .closeBtn {
+  position: absolute;
+  top: 1.8rem;
+  right: 3.5rem;
+  font-size: 4.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content a {
+  width: 50%;
+  margin: auto;
+  color: #999;
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+
+header nav .mobile-menu .overlay-bg .overlay-content a:hover {
+  color: #fff;
+  background: #fa4646bd;
+}
+
+#home {
+  min-height: 85%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4fe9e994), to(#4fe9e988)), url(../img/bg.jpg);
+  background: linear-gradient(#4fe9e994, #4fe9e988), url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 6.6rem;
+}
+
+#home .home-top-area {
+  padding: 15rem 0;
+}
+
+#home .home-top-area h1 {
+  font-size: 4.5rem;
+}
+
+#home .home-top-area p {
+  font-size: 2rem;
+}
+
+#home .home-top-area a {
+  font-size: 1.8rem;
+}
+
+#about {
+  padding: 12rem 0;
+}
+
+#about .align-self-end {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .align-self-end h3 {
+  font-size: 2.7rem;
+}
+
+#about .align-self-end p {
+  font-size: 1.9rem;
+  text-align: justify;
+}
+
+#services {
+  background-color: #EFEFF5;
+}
+
+#services h3 {
+  font-size: 2rem;
+}
+
+#services h2 {
+  font-size: 3.4rem;
+}
+
+#services .card {
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#services .card:hover {
+  -webkit-box-shadow: .2rem .2rem .8rem #fcb4b4;
+          box-shadow: .2rem .2rem .8rem #fcb4b4;
+}
+
+#services .card .card-header .fa {
+  font-size: 4.5rem;
+}
+
+#services .card .card-body h4 {
+  font-size: 2.5rem;
+}
+
+#services .card .card-body p {
+  font-size: 2rem;
+}
+
+#packages h3 {
+  font-size: 2rem;
+}
+
+#packages h2 {
+  font-size: 3.4rem;
+}
+
+#packages .card {
+  -webkit-box-shadow: .3rem .4rem .5rem #f3bbbb;
+          box-shadow: .3rem .4rem .5rem #f3bbbb;
+}
+
+#packages .card h4 {
+  font-size: 2.4rem;
+}
+
+#packages .card h3 {
+  font-size: 2.8rem;
+}
+
+#packages .card ul li {
+  font-size: 1.6rem;
+}
+
+#packages .card .card-footer button {
+  font-size: 1.8rem;
+}
+
+#skill {
+  background-color: #EFEFF5;
+}
+
+#skill h3 {
+  font-size: 2.5rem;
+}
+
+#skill .card .fa {
+  font-size: 7rem;
+  margin-top: -4.5rem;
+  color: #fa3a7a;
+}
+
+#skill .card:hover .fa {
+  color: #78af44;
+}
+
+#skill .card .card-body h3 {
+  font-size: 3rem;
+}
+
+#skill .card .card-body p {
+  font-size: 2rem;
+}
+
+#skill .progress {
+  height: 2rem;
+}
+
+#skill .progress .progress-bar {
+  font-size: 1.6rem;
+}
+
+#contact .card {
+  background-color: #EFEFF5;
+}
+
+#contact .card #send:hover {
+  background-color: #EFEFF5;
+  color: green;
+}
+
+#contact .card #reset:hover {
+  background-color: #EFEFF5;
+  color: red;
+}
+
+#contact .card .card-body .form-group input {
+  font-size: 1.7rem;
+}
+
+#contact .card .card-body .form-group textarea {
+  resize: none;
+  font-size: 1.6rem;
+}
+
+#contact #contact-right {
+  margin-top: 120px;
+}
+
+#contact #contact-right h5 {
+  font-size: 2.4rem;
+}
+
+#contact #contact-right h2 {
+  font-size: 3.2rem;
+}
+
+#footer .scoleBtn {
+  width: 50px;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  background: #ff000096;
+  padding: .5rem;
+}
+
+#footer .scoleBtn abbr {
+  cursor: pointer;
+}
+
+#footer span {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header nav .main-nav {
+    display: none;
+  }
+  header nav .mobile-menu span {
+    display: block;
+  }
+}
